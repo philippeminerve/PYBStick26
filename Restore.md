@@ -19,7 +19,7 @@ cf. https://github.com/mchobby/pyboard-driver/tree/master/PYBStick#bouton-reset-
 
 A ce stade, la carte conserve sa led rouge allumée en continue
 
-## Installation de dfu-util
+## Utilisation de dfu-util
 
 Dézipper l'archive téléchargée dans un répertoire. Ex : C:\%userprofile%\Documents\PYBStick26
 
@@ -41,7 +41,23 @@ Voici les éléments remarquables :
 
 [/!\ Si vous rencontrez **uniquement** un ou plusieurs messages "Cannot open DFU device XXXX:XXXX"](Restore.md#PB-Driver-USB)
 
+On sauvegarde les 512ko soit (512x1024 = 524 288 octets), via la commande :
 
+`dfu-util --alt 0 --upload pybstick26-original.dfu -s:524288`
+
+![Sauvegarder son microcontroleur](docs/_static/dfuupload.png)
+
+A présent un fichier **pybstick26-original.dfu** est présent dans le répertoire où se trouve dfu-util
+
+## dfu-util pour réinstaller une sauvegarde
+
+Comme au paragraphe précédent on vérifie que la carte est bien reconnue via la commande : `dfu-util -l`
+
+Puis on utilise la commande : `dfu-util --device 0483:df11 --alt 0 -s 0x08000000 --download pybstick26-original.dfu`
+
+![installer sa sauvegarde](docs/_static/dfudownload.png)
+
+La PYBStick est revenue à son état initial !
 
 ## PB Driver USB
 
