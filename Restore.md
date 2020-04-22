@@ -13,7 +13,12 @@ NB : http://dfu-util.sourceforge.net/releases/dfu-util-0.9-win64.zip est la vers
 ## Installation de dfu-util
 
 Dézipper l'archive téléchargée dans un répertoire. Ex : C:\%userprofile%\Documents\PYBStick26
-Ouvrir une invite de commande (CMD):
 
+Ouvrir une invite de commande (CMD) :
+
+![Ouvrir une invite de commande (CMD)](docs/_static/invit.png):
+
+Taper :
+    cd Documents\PYBStick26
 
 
