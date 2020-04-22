@@ -1,4 +1,4 @@
-# Méthodologie pour sauvegarder et restaurer la PYBStick26 en version Python - Version Windows 10
+# Méthodologie pour sauvegarder et restaurer la PYBStick26 en version Micropython - Version Windows 10
 
 ## Résumé
 Avant de basculer sa carte PYBStick26 en programmation Arduino, il est judicieux en amont d'effectuer une sauvegarder du microcontroleur en version micropython afin d'être en mesure de retrouver l'état initial de celui-ci. En effet, le téléversement via Arduino écrase l'ensemble de la flash de la carte.
