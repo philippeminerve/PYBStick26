@@ -63,7 +63,7 @@ La PYBStick est revenue à son état initial !
 
 Il est possible bien que la carte soit accessible dans le gestionnaire de périphérique qu'elle ne soit pas visible en mode DFU.
 2 cas de figures :
-* Débrancher la carte et la rebrancher en mode micropython puis refaire la manipulation de connexion en DFU
+* Débrancher la carte et la rebrancher en mode micropython puis refaire la manipulation de [connexion en DFU](Restore.md#Démarrage-de-la-carte-en-mode-DFU)
 * Modifier le driver USB utilisé à l'aide de l'utilitaire ZADIG : https://github.com/pbatard/libwdi/releases/download/b730/zadig-2.5.exe
 
 Etape 1 : Via le menu option/List all devices
