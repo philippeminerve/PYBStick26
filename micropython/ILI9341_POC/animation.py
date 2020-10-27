@@ -28,7 +28,7 @@ cptImages = 0
 dureeAnim = 10000
 
 while (ticks_ms()-t0)<dureeAnim:
-    for uneimage in range(11,25):
+    for uneimage in range(11,24):
         filename = 'bird'+str(uneimage)+'.bmp'
         display._data(open(filename,'rb').read())
         cptImages = cptImages + 1
