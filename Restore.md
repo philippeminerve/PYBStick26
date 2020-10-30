@@ -90,4 +90,4 @@ Etape 1 : Presser le bouton USER (en bas à gauche port USB vers le haut), puis 
 
 Etape 2 : Les led orange et verte sur la carte vont se mettre à clignoter alternativement. Relacher le bouton USER lorsque les led verte et orange sont allumées en même temps.
 
-Etape 3 : les led verte et orange clignotent trés rapidement puis les led verte, orange et rouge s'allume en continue et enfin la led rouge s'allume (signe d'écriture sur la carte) et c'est réglé, votre carte est revenue dans sa configuration d'usine.
+Etape 3 : les led verte et orange clignotent trés rapidement puis les led verte, orange et rouge s'allument en continue et enfin la led rouge s'allume (signe d'écriture sur la carte) et c'est réglé, votre carte est revenue dans sa configuration d'usine !
