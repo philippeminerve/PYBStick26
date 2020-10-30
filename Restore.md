@@ -81,3 +81,13 @@ Etape 3 : On vérifie que le drivers cible est bien WINUSB V6 puis replace drive
 Etape 4 : Tout doit être rentré dans l'ordre
 
 ![Zadig etape 4](docs/_static/zadig4.png)
+
+## Reinit usine
+
+Il arrive lors de redémarrage de la carte pendant qu'une écriture est en cours que le système de fichier soit corrompu. Votre code sera perdu mais il existe une procédure de remise à zéro - version usine:
+
+Etape 1 : Presser le bouton USER (en bas à gauche port USB vers le haut), puis connecter votre PybStick sur un port USB en maintenant le bouton appuyé.
+
+Etape 2 : Les led orange et verte sur la carte vont se mettre à clignoter alternativement. Relacher le bouton USER lorsque les led verte et orange sont allumées en même temps.
+
+Etape 3 : les led verte et orange clignotent trés rapidement puis les led verte, orange et rouge s'allume en continue et enfin la led rouge s'allume (signe d'écriture sur la carte) et c'est réglé, votre carte est revenue dans sa configuration d'usine.
