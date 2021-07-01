@@ -24,17 +24,27 @@ try:
     nblines = len(open(filename, 'r').readlines())
     #Remove first line
     c_file.readline()
+    c_data = c_file.read().rstrip()
+    c_data = c_data.replace('\n','')
+    c_data = c_data.replace('\r','')
+    c_data = c_data.replace(',0X', '\\x')
+    c_data = c_data.replace('};','')
+    
+    """
     for aline in range(1,nblines):
         c_data = c_file.readline().rstrip()
+        c_data = c_data.replace('\n','')
         c_data = c_data.replace('};','')
-        c_data = c_data.replace('0X', '\\x')
+        c_data = c_data.replace(',0X', '\\x')
+        image_car = image_car + c_data
+    
         if aline == nblines - 1:
             image_car = (image_car + c_data)[:-1]
         else:
             image_car = image_car + c_data
-    
-    python_file.write('image=b\''+image_car+'\'')
-
+    """    
+    python_file.write("image=b'\\x"+c_data[2:]+'\'')
+    #print('image=b\'\\'+image_car[1:]+'\'')
 finally:
     c_file.close()
     python_file.close()
