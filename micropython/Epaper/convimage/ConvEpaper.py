@@ -28,7 +28,7 @@ try:
     c_data = c_data.replace('\n','')
     c_data = c_data.replace('\r','')
     c_data = c_data.replace(',0X', '\\x')
-    c_data = c_data.replace('};','')
+    c_data = c_data.replace(',};','')
     
     """
     for aline in range(1,nblines):
